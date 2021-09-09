@@ -1,0 +1,51 @@
+[debug] [2021-09-09T18:59:42.440Z] ----------------------------------------------------------------------
+[debug] [2021-09-09T18:59:42.442Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-09T18:59:42.443Z] CLI Version:   9.16.0
+[debug] [2021-09-09T18:59:42.443Z] Platform:      win32
+[debug] [2021-09-09T18:59:42.443Z] Node Version:  v14.17.1
+[debug] [2021-09-09T18:59:42.443Z] Time:          Fri Sep 10 2021 00:29:42 GMT+0530 (India Standard Time)
+[debug] [2021-09-09T18:59:42.444Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-09T18:59:42.511Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-09T18:59:42.511Z] > authorizing via signed-in user (gssanjanakush@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Snapchat\snapchat-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using snapchat-clone. 
+[debug] [2021-09-09T19:00:02.439Z] > refreshing access token with scopes: []
+[debug] [2021-09-09T19:00:02.439Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-09T19:00:03.591Z] <<< HTTP RESPONSE 200 {"date":"Thu, 09 Sep 2021 19:00:03 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-09T19:00:03.672Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/snapchat-clone [none]
+[debug] [2021-09-09T19:00:05.831Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/snapchat-clone 403
+[debug] [2021-09-09T19:00:05.831Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/snapchat-clone {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-09-09T19:00:05.832Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-09-09T19:00:06.267Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project snapchat-clone. Please make sure the project exists and your account has permission to access it.
